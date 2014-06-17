@@ -1,4 +1,4 @@
-Easy Logo Slider
+WP Easy Logo Slider
 ===================
 
 Built with (slickslider.js)[https://github.com/kenwheeler/slick/], the Easy Logo slider makes it
@@ -12,4 +12,12 @@ Desired Features
 
 - Add logo's via gallery
 - Alter image sizes (thumb support)
-- Change breakpoints and # of items to display
+- Slickslider.js
+	- slides per slideshow
+	- slides per breakpoint
+	- breakpoint values
+	- add multiple-row support
+
+- PHP
+	- # of slides
+	- filter slides to display (currently all)
