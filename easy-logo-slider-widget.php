@@ -9,11 +9,11 @@ class SZ_Easy_Logo_Slider_Widget extends WP_Widget
 	function SZ_Easy_Logo_Slider_Widget() {
 
 		$widget_opts = array(
-				'classname' => 'easy-logo-slider',
+				'classname' => 'easy-logo-slider-widget',
 				'description' => 'Easy Logo Slider Widget',
 		);
 
-		$this->WP_Widget('easy_logo_slider_widget', 'Stock Ticker Widget', $widget_opts);
+		$this->WP_Widget('easy_logo_slider_widget', 'Easy Logo Slider Widget', $widget_opts);
 	}
 
 	function widget($args, $instance) {
@@ -28,13 +28,10 @@ class SZ_Easy_Logo_Slider_Widget extends WP_Widget
 	}
 }
 
-if ( class_exists( 'SZ_Easy_Logo_logo_slider' )) {
+// Load and Register the widget
+add_action('widgets_init', 'register_easy_logo_slider_widget');
 
-	// Load and Register the widget
-	add_action('widgets_init', 'register_easy_logo_slider_widget');
-
-	function register_easy_logo_slider_widget() {
-			register_widget( 'easy_logo_slider_widget' );
-	}
-
+function register_easy_logo_slider_widget() {
+	register_widget( 'SZ_Easy_Logo_Slider_Widget' );
 }
+

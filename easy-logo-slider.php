@@ -8,12 +8,12 @@
  * Author URI: http://www.sennza.com.au/
  */
 
-if ( ! class_exists('SZ_Easy_Logo_logo_slider') ) {
+if ( ! class_exists('SZ_Easy_Logo_Slider') ) {
 
 /**
 * SZ_Easy_Logo_logo_slider class
 */
-class SZ_Easy_Logo_logo_slider
+class SZ_Easy_Logo_Slider
 {
 
 	private static $instance;
@@ -26,7 +26,7 @@ class SZ_Easy_Logo_logo_slider
 
 	public static function get_instance() {
 		if ( ! self::$instance ) {
-			self::$instance = new SZ_Easy_Logo_logo_slider;
+			self::$instance = new SZ_Easy_Logo_Slider;
 		}
 
 		return self::$instance;
@@ -45,7 +45,7 @@ class SZ_Easy_Logo_logo_slider
 	public function register_logo_slider() {
 		$labels = array(
 			'name'               => _x( 'Logo', 'logo_slider' ),
-			'singular_name'      => _x( 'Logo logo_slider', 'logo_slider' ),
+			'singular_name'      => _x( 'Logo Slider', 'logo_slider' ),
 			'add_new'            => _x( 'Add New', 'logo_slider' ),
 			'add_new_item'       => _x( 'Add New Logo', 'logo_slider' ),
 			'edit_item'          => _x( 'Edit Logo', 'logo_slider' ),
@@ -89,4 +89,4 @@ class SZ_Easy_Logo_logo_slider
 
 } // endif
 
-SZ_Easy_Logo_logo_slider::get_instance();
+SZ_Easy_Logo_Slider::get_instance();
