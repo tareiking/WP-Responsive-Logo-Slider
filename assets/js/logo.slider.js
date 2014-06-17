@@ -32,13 +32,14 @@
 	        }]
 	    });
 
-	    $('ul.nav a').on('click', function(event) {
-	        event.preventDefault();
-	        var targetID = $(this).attr('href');
-	        var targetST = $(targetID).offset().top - 48;
-	        $('body, html').animate({
-	            scrollTop: targetST + 'px'
-	        }, 300);
-	    });
+	   $('.slick-back').on('click', function(event) {
+	   		event.preventDefault();
+	   		$('.responsive').slickPrev();
+	   });
+
+	   $('.slick-forward').on('click', function(event) {
+	   		event.preventDefault();
+	   		$('.responsive').slickNext();
+	   });
 	});
 })(jQuery);
