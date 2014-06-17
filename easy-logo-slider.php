@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Easy Logo logo_slider (Slicklogo_slider.js)
+ * Plugin Name: Easy Logo Slider (using slickslider.js)
  * Plugin URI: http://www.sennza.com.au/
- * Description: Creates a responsive easy logo logo_slider
+ * Description: Creates a responsive logo slider
  * Version: 0.1
  * Author: Sennza Pty Ltd, Bronson Quick, Ryan McCue, Lachlan MacPherson, Tarei King
  * Author URI: http://www.sennza.com.au/
