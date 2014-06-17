@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Easy Logo Slider (using slickslider.js)
+ * Plugin Name: Sennza Easy Logo Slider (using slickslider.js)
  * Plugin URI: http://www.sennza.com.au/
  * Description: Creates a responsive logo slider
  * Version: 0.1
@@ -11,7 +11,7 @@
 if ( ! class_exists('SZ_Easy_Logo_Slider') ) {
 
 /**
-* SZ_Easy_Logo_logo_slider class
+* SZ_Easy_Logo_Slider class
 */
 class SZ_Easy_Logo_Slider
 {
@@ -21,7 +21,7 @@ class SZ_Easy_Logo_Slider
 	/**
 	 * Create a new instance of our class
 	 *
-	 * @return SZ_Easy_Logo_logo_slider
+	 * @return SZ_Easy_Logo_Slider
 	 */
 
 	public static function get_instance() {

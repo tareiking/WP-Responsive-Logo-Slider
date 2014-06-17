@@ -21,3 +21,4 @@ Desired Features
 - PHP
 	- # of slides
 	- filter slides to display (currently all)
+	- change breakpoints to the width of the parent container
