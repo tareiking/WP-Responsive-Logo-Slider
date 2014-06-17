@@ -36,6 +36,7 @@ class SZ_Easy_Logo_Slider
 	 */
 	function __construct(){
 		add_action( 'init', array ( $this, 'register_logo_slider' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'logo_slider_scripts' ) );
 	}
 
 	/**
@@ -85,8 +86,37 @@ class SZ_Easy_Logo_Slider
 		add_image_size( 'logo_slider-thumb', 105, 40, true ); // Hardcropped thumbnails
 		add_image_size( 'logo_slider-medium', 300, 9999, false ); // Not cropped medium thumbnails
 	}
+
+	/**
+	 * Enqueue slider scripts if on frontend
+	 */
+	function logo_slider_scripts(){
+		if ( ! is_admin() ):
+			wp_enqueue_script( 'slick-slider', plugins_url( '/assets/js/slick.min.js', __FILE__ ), array( 'jquery' ), '1.3.6', true );
+			wp_enqueue_script( 'logo-slider-js', plugins_url( 'assets/js/logo.slider.js', __FILE__ ), array(
+					'slick-slider',
+				), '1.0', true );
+			wp_enqueue_style( 'logo-slider-styles', plugins_url( '/assets/css/slick.css', __FILE__ ), array(), 1.0 );
+		endif;
+	}
+	/**
+	 * Gets the slider and returns it as a template
+	 * @return mixed, template file
+	 */
+	public static function do_slider() {
+		$plugindir        = dirname( __FILE__ );
+		$templatefilename = 'slider-template.php';
+		if ( file_exists( TEMPLATEPATH . '/' . $templatefilename ) ) {
+			$return_template = TEMPLATEPATH . '/' . $templatefilename;
+			require_once( $return_template );
+		} else {
+			$return_template = $plugindir . '/templates/' . $templatefilename;
+			require_once( $return_template );
+		}
+	}
 }
 
 } // endif
+require_once( plugin_dir_path( __FILE__ ) . '/easy-logo-slider-widget.php' );
 
 SZ_Easy_Logo_Slider::get_instance();

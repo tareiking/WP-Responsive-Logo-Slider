@@ -17,7 +17,7 @@ class SZ_Easy_Logo_Slider_Widget extends WP_Widget
 	}
 
 	function widget($args, $instance) {
-
+		SZ_Easy_Logo_Slider::do_slider();
 	}
 
 	// updates the widget options when saved.
