@@ -1,4 +1,7 @@
 <?php
+/**
+ * Single Row Slider Template
+ */
 $defaults  = array(
 	'post_type'       => 'logo_slider',
 	'posts_per_page'  => -1,

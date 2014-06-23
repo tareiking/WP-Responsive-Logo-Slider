@@ -1,4 +1,8 @@
 <?php
+/**
+ * Alternative Logo Slider Template:
+ * Displays as a 3 x 3 grid
+ */
 $defaults  = array(
 	'post_type'       => 'logo_slider',
 	'posts_per_page'  => -1,

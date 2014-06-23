@@ -100,12 +100,12 @@ class SZ_Easy_Logo_Slider
 		endif;
 	}
 	/**
-	 * Gets the slider and returns it as a template
-	 * @return mixed, template file
+	 * Pass slider query into template file
+	 * Retrieves slider from template directory first
 	 */
 	public static function do_slider() {
 		$plugindir        = dirname( __FILE__ );
-		$templatefilename = 'slider-rows-template.php';
+		$templatefilename = 'slider-alt-template.php';
 		if ( file_exists( TEMPLATEPATH . '/' . $templatefilename ) ) {
 			$return_template = TEMPLATEPATH . '/' . $templatefilename;
 			require_once( $return_template );
