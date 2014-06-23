@@ -4,7 +4,6 @@ $defaults  = array(
 	'posts_per_page'  => -1,
 );
 
-// $args = wp_parse_args( $args, $defaults );
 $slider_items = new WP_Query( $defaults );
 
 if ( $slider_items->have_posts() ): ?>

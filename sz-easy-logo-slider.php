@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: Sennza Easy Logo Slider (using slickslider.js)
- * Plugin URI: http://www.sennza.com.au/
- * Description: Creates a responsive logo slider
- * Version: 0.1
- * Author: Sennza Pty Ltd, Bronson Quick, Ryan McCue, Lachlan MacPherson, Tarei King
+ * Plugin Name: Sennza Easy Logo Slider
+ * Plugin URI: http://www.sennza.com.au/sz_easy_logo_slider
+ * Description: Creates a responsive logo slider using slickslider.js from Ken Wheeler
+ * Version: 1.0.2
+ * Author: Sennza Pty Ltd
  * Author URI: http://www.sennza.com.au/
  */
 
@@ -71,7 +71,7 @@ class SZ_Easy_Logo_Slider
 			'menu_icon'           => 'dashicons-slides',
 			'menu_position'       => 20,
 			'show_in_nav_menus'   => false,
-			'publicly_queryable'  => true,
+			'publicly_queryable'  => false,
 			'exclude_from_search' => true,
 			'has_archive'         => false,
 			'query_var'           => true,
@@ -93,7 +93,7 @@ class SZ_Easy_Logo_Slider
 	function logo_slider_scripts(){
 		if ( ! is_admin() ):
 			wp_enqueue_script( 'slick-slider', plugins_url( '/assets/js/slick.min.js', __FILE__ ), array( 'jquery' ), '1.3.6', true );
-			wp_enqueue_script( 'logo-slider-js', plugins_url( 'assets/js/logo.slider.js', __FILE__ ), array(
+			wp_enqueue_script( 'logo-slider-js', plugins_url( '/assets/js/logo.slider.js', __FILE__ ), array(
 					'slick-slider',
 				), '1.0', true );
 			wp_enqueue_style( 'logo-slider-styles', plugins_url( '/assets/css/slick.css', __FILE__ ), array(), 1.0 );
@@ -117,6 +117,6 @@ class SZ_Easy_Logo_Slider
 }
 
 } // endif
-require_once( plugin_dir_path( __FILE__ ) . '/easy-logo-slider-widget.php' );
+require_once( plugin_dir_path( __FILE__ ) . '/sz-easy-logo-slider-widget.php' );
 
 SZ_Easy_Logo_Slider::get_instance();

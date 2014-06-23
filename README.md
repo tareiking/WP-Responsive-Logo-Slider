@@ -1,4 +1,4 @@
-WP Easy Logo Slider
+Sennza Easy Logo Slider
 ===================
 
 Built with (slickslider.js)[https://github.com/kenwheeler/slick/], the Easy Logo slider makes it

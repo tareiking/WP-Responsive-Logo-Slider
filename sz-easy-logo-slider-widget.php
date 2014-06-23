@@ -1,8 +1,6 @@
 <?php
 /**
- *
- * Here's a widget for the stock ticker
- *
+ *	Widget for the SZ Easy Slider
  */
 class SZ_Easy_Logo_Slider_Widget extends WP_Widget
 {

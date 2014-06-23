@@ -5,7 +5,6 @@ $defaults  = array(
 );
 $slides_per_row = 3;
 $counter = 0;
-// $args = wp_parse_args( $args, $defaults );
 $slider_items = new WP_Query( $defaults );
 
 if ( $slider_items->have_posts() ): ?>
