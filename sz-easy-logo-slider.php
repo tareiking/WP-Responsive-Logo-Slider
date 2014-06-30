@@ -45,18 +45,18 @@ class SZ_Easy_Logo_Slider
 	 */
 	public function register_logo_slider() {
 		$labels = array(
-			'name'               => _x( 'Logo', 'logo_slider' ),
-			'singular_name'      => _x( 'Logo Slider', 'logo_slider' ),
+			'name'               => _x( 'Lenders Logo', 'logo_slider' ),
+			'singular_name'      => _x( 'Lenders Logo', 'logo_slider' ),
 			'add_new'            => _x( 'Add New', 'logo_slider' ),
 			'add_new_item'       => _x( 'Add New Logo', 'logo_slider' ),
 			'edit_item'          => _x( 'Edit Logo', 'logo_slider' ),
 			'new_item'           => _x( 'New Logo', 'logo_slider' ),
 			'view_item'          => _x( 'View Logo', 'logo_slider' ),
 			'search_items'       => _x( 'Search Logo Sliders', 'logo_slider' ),
-			'not_found'          => _x( 'No logo sliders found', 'logo_slider' ),
-			'not_found_in_trash' => _x( 'No logo slides found in Trash', 'logo_slider' ),
-			'parent_item_colon'  => _x( 'Parent Slide:', 'logo_slider' ),
-			'menu_name'          => _x( 'Logo Sliders', 'logo_slider' ),
+			'not_found'          => _x( 'No Logos found', 'logo_slider' ),
+			'not_found_in_trash' => _x( 'No Logos found in Trash', 'logo_slider' ),
+			'parent_item_colon'  => _x( 'Parent Logo Slider:', 'logo_slider' ),
+			'menu_name'          => _x( 'Lenders Logos', 'logo_slider' ),
 			'all_items'          => _x( 'All Logo Sliders', 'logo_slider' ),
 		);
 
